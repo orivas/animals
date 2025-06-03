@@ -1,0 +1,58 @@
+# Built files
+/build/
+/**/build/
+
+# Gradle
+.gradle/
+**/*.iml
+.gradle/
+local.properties
+/.idea/libraries/
+
+# Signing keys
+**/keystore.properties
+**/signing.properties
+
+# Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+/.idea/caches
+/.idea/gradle.xml
+/.idea/libraries/
+/.idea/modules.xml
+/.idea/workspace.xml
+
+# Misc
+.DS_Store
+*.log
+*.swp
+*.swo
+*.bak
+
+# OS Files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Kotlin specific
+*.kotlin_module
+
+# IntelliJ
+out/
+
+# Crashlytics / Firebase
+crashlytics-build.properties
+fabric.properties
+
+# Fastlane
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
+
+# NDK
+obj/
+
+# Proguard
+captures/

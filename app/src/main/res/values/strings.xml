@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dogs</string>
+
+    <!-- dogs screen -->
+    <string name="dogs_screen_title">Dogs We Love</string>
+    <string name="data_from">Data from %s</string>
+    <string name="no_data">No data</string>
+
+    <!-- routes screen -->
+    <string name="dogs_route">dogs</string>
+</resources>
