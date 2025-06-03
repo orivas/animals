@@ -19,7 +19,9 @@ and get the data from the database.
 🛠 Getting Started
 
 git clone git@github.com:orivas/animals.git
+
 cd animals
+
 
 Run the app on emulator or device
 
