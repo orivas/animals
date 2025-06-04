@@ -20,6 +20,7 @@ import com.orivas.animalapp.dogs.presentation.viewmodel.DogsViewModel
 import com.orivas.animalapp.navigation.AnimalAppNavigation
 import com.orivas.animalapp.ui.components.AnimalsAppBar
 import com.orivas.animalapp.ui.theme.AnimalAppTheme
+import com.orivas.animalapp.ui.theme.BackgroundColor
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -33,7 +34,7 @@ class MainActivity : ComponentActivity() {
             AnimalAppTheme {
                 val navController = rememberNavController()
                 Scaffold(
-                    contentColor = Color(0xFFF8F8F8),
+                    contentColor = BackgroundColor,
                     modifier = Modifier
                         .fillMaxSize(),
 

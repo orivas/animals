@@ -118,9 +118,6 @@ class DogsRepositoryImplTest {
 
     @Test
     fun `test loading data`() = runTest {
-        val response = NetworkResult.Loading
-        Mockito.`when`(localSource.getAllDogs()).thenReturn(flowOf(response))
-
         val result = dogsRepository.getAllDogs().first()
 
         assert(result is NetworkResult.Loading)
