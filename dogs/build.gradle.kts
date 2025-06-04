@@ -56,4 +56,9 @@ dependencies {
 
     //db module
     implementation(project(":db"))
+
+    //mockito
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.kotlinx.coroutines.test)
 }

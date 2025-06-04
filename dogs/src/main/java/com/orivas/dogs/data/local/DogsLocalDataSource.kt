@@ -2,6 +2,7 @@ package com.orivas.dogs.data.local
 
 import com.orivas.animals.db.dogs.dao.AnimalsDao
 import com.orivas.dogs.data.DogsDataSource
+import com.orivas.dogs.data.LocalDataSource
 import com.orivas.dogs.data.SaveDataLocalSource
 import com.orivas.dogs.data.mappers.toDomain
 import com.orivas.dogs.data.mappers.toEntity
@@ -17,7 +18,7 @@ import javax.inject.Inject
 
 class DogsLocalDataSource @Inject constructor(
     private val animalsDao: AnimalsDao
-) : DogsDataSource, SaveDataLocalSource {
+) : LocalDataSource {
 
     override suspend fun getAllDogs(): Flow<NetworkResult<DogsDto>> {
         return flow {

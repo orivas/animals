@@ -11,6 +11,7 @@ import com.orivas.shared.domain.exceptions.UnknownResponseException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.last
@@ -29,7 +30,7 @@ class DogsRepositoryImpl @Inject constructor(
 
             //remove, only for test
             delay(1000L)
-            when (val local = localDataSource.getAllDogs().last()) {
+            when (val local = localDataSource.getAllDogs().first()) {
                 is NetworkResult.OnSuccess -> {
                     if (local.data.dogs.isNotEmpty()) {
                         emit(
@@ -38,12 +39,12 @@ class DogsRepositoryImpl @Inject constructor(
                             )
                         )
                     } else {
-                        emit(getRemoteData().last())
+                        emit(getRemoteData().first())
                     }
                 }
 
                 else -> {
-                    emit(getRemoteData().last())
+                    emit(getRemoteData().first())
                 }
             }
         }.flowOn(Dispatchers.IO)
@@ -52,7 +53,7 @@ class DogsRepositoryImpl @Inject constructor(
 
     private fun getRemoteData(): Flow<NetworkResult<DogsDto>> {
         return flow {
-            when (val remote = remoteDataSource.getAllDogs().last()) {
+            when (val remote = remoteDataSource.getAllDogs().first()) {
                 is NetworkResult.OnSuccess -> {
                     saveData(remote.data.dogs)
                     emit(

@@ -14,3 +14,5 @@ interface DogsDataSource {
 interface SaveDataLocalSource {
     suspend fun saveAllDogs(list: List<DogDto>)
 }
+
+interface LocalDataSource: DogsDataSource, SaveDataLocalSource
