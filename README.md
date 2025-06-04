@@ -28,3 +28,6 @@ Run the app on emulator or device
 📷 Screenshots
 
 ![Screenshot 2025-06-03 at 5 48 39 p m](https://github.com/user-attachments/assets/fb00c7e7-5362-404c-8b60-2b913d06d8d6)
+
+
+![Screenshot 2025-06-03 at 6 48 12 p m](https://github.com/user-attachments/assets/e854e77e-ac6c-41ea-b317-6a637d28c5fd)
