@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- dogs screen -->
+    <string name="dogs_screen_title">Dogs We Love</string>
+    <string name="data_from">Data from %s</string>
+    <string name="no_data">No data</string>
+</resources>

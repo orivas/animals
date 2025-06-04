@@ -9,7 +9,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
-import com.orivas.animalapp.R
+import com.orivas.dogs.R
 import com.orivas.animalapp.dogs.presentation.viewmodel.DogsViewModel
 import com.orivas.animalapp.ui.UiState
 import com.orivas.animalapp.ui.components.AnimalCardItem

@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.orivas.animalapp.R
+import com.orivas.dogs.R
 import com.orivas.animalapp.ui.components.text.TextDescription
 
 @Composable
